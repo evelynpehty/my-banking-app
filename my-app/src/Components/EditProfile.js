@@ -54,11 +54,11 @@ function EditProfile(){
             >
                 <Paper elevation={24} variant="elevation" sx={{ mt:3, my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
             
-                <Typography component="h1" variant="h4" sx={{ mb: 5, mt:3 }} >
+                <Typography component="h1" variant="h4" sx={{ mb: 5, mt:3, color:"#00237B", fontWeight: "bold" }}>
                     Edit Profile
                 </Typography>
 
-                {updateStatus && <Alert sx={{ mb: 5, width:"100%" }} onClose={() => {setUpdateStatus(false)}}>Profile Updated!</Alert>}
+                {updateStatus && <Alert sx={{ mb: 5, width:"97%" }} onClose={() => {setUpdateStatus(false)}}>Profile Updated!</Alert>}
                 {/* <Box
                     component="img"
                     sx={{

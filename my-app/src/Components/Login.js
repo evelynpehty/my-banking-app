@@ -81,11 +81,6 @@ export default function Login() {
               alignItems: 'center',
             }}
           >
-             {eStatus && 
-                <Alert variant="outlined"  sx={{ mb: 3, width:"100vh" }} severity="error" onClose={() => {setEStatus(false)}}> 
-                    incorrect login credentials
-                </Alert>
-              }
                 
             <Box
             display="flex"
@@ -94,8 +89,13 @@ export default function Login() {
             minHeight="100vh"
             flexDirection = "column"
             >
-            <Typography component="h1" variant="h4" sx={{ mb: 3 }}>
-                    Login
+              {eStatus && 
+                 <Alert variant="filled"  sx={{ mb: 3, width:"100%" }} severity="error" onClose={() => {setEStatus(false)}}> 
+                     incorrect login credentials
+                 </Alert>
+               }
+            <Typography component="h1" variant="h4" sx={{ mb: 3, color:"#00237B", fontWeight: "bold" }}>
+                    Welcome to Personal Internet Banking
             </Typography>
             
             <Box component="form" onSubmit={handleLogin} >
@@ -109,7 +109,7 @@ export default function Login() {
                     onChange={(e)=>setEmail(e.target.value)}
                     fullWidth={ true }
                     sx={{ mb: 3 }}
-            
+  
                 />
               <TextField
                     required

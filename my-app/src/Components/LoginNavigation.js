@@ -19,7 +19,6 @@ const pages = ['Accounts', 'Wealths', 'Rewards'];
 function LoginNavigation() {
   const navigate = useNavigate()
 
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -59,7 +58,6 @@ function LoginNavigation() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -70,7 +68,7 @@ function LoginNavigation() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            BANK-X
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -114,7 +112,7 @@ function LoginNavigation() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="/EditProfile"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -126,7 +124,7 @@ function LoginNavigation() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            BANK-X
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

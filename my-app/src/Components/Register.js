@@ -79,7 +79,7 @@ export default function Checkout() {
                 flexDirection = "column"
             >
         <Paper elevation={24} variant="elevation" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
-            <Typography component="h1" variant="h4" sx={{ mb: 3 }} align="center">
+            <Typography component="h1" variant="h4" sx={{ mb: 3, color:"#00237B", fontWeight: "bold" }}>
                     Register
             </Typography>
 
