@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-banking-app/static/css/main.8f702e75.css",
-    "main.js": "/my-banking-app/static/js/main.b52c780c.js",
+    "main.js": "/my-banking-app/static/js/main.f9a4e23a.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-banking-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/bank-logo.png": "/my-banking-app/static/media/bank-logo.7f7eb384577a94730800.png",
     "static/media/ndp.png": "/my-banking-app/static/media/ndp.1439b6b0dd1b2c786b79.png",
@@ -17,11 +17,11 @@
     "static/media/facebook.svg": "/my-banking-app/static/media/facebook.5f4e914ebae714a12df3b45de356da4d.svg",
     "static/media/youtube.svg": "/my-banking-app/static/media/youtube.37dafca81d6a22718bf347e278a0dcb2.svg",
     "main.8f702e75.css.map": "/my-banking-app/static/css/main.8f702e75.css.map",
-    "main.b52c780c.js.map": "/my-banking-app/static/js/main.b52c780c.js.map",
+    "main.f9a4e23a.js.map": "/my-banking-app/static/js/main.f9a4e23a.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-banking-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f702e75.css",
-    "static/js/main.b52c780c.js"
+    "static/js/main.f9a4e23a.js"
   ]
 }
