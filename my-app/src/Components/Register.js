@@ -63,7 +63,7 @@ export default function Checkout() {
                 "contactNumber": contactNumber
             }    
             localStorage.setItem(email, JSON.stringify(value))
-            navigate("/")
+            navigate("/Login")
         } 
     }
 

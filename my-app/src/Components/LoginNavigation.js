@@ -40,7 +40,7 @@ function LoginNavigation() {
   const handleLogOut = () =>{
     localStorage.removeItem('Current User');
     navigate("/")
-    window.location.reload();
+    window.location.reload()
   } 
 
   const handleProfile = () =>{
@@ -64,7 +64,7 @@ function LoginNavigation() {
 
   return (
     
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

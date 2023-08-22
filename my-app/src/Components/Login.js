@@ -42,8 +42,7 @@ export default function Login() {
             if(password === correctpassword){
                 localStorage.setItem("Current User", email)
                 navigate("/EditProfile")
-                window.location.reload();
-
+                window.location.reload();  
             }
         }
         setEStatus(true)
