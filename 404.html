@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+</head>
+<body>
+  <script>
+    const pathname = window.location.pathname.replace(/\/my-banking-app\/?/, '/');
+    window.history.replaceState({}, '404', pathname);
+  </script>
+</body>
+</html>
