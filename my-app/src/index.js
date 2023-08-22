@@ -10,7 +10,7 @@ import theme from './theme'; // Import your custom theme
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme} basename="/my-banking-app">
     <BrowserRouter>
       <App />
     </BrowserRouter>
