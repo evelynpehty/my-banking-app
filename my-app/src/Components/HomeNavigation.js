@@ -36,11 +36,11 @@ function HomeNavigation() {
   const handleRegister = () =>{
     navigate("/Register")
   } 
+
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-         
           <Typography
             variant="h6"
             noWrap

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState, useEffect} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -48,12 +48,25 @@ function LoginNavigation() {
     navigate("/EditProfile")
     
   }
+  
+  const [letter, setLetter]= useState("")
+  let currUser = localStorage.getItem("Current User")
+  useEffect(() => {
+    if(currUser !== null){
+      setLetter(currUser.charAt(0).toUpperCase())
+    }
+    else{
+
+      setLetter("")
+    }
+    
+  }, [currUser]);
 
   return (
+    
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-         
           <Typography
             variant="h6"
             noWrap
@@ -141,7 +154,7 @@ function LoginNavigation() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Evelyn Peh" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={letter} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

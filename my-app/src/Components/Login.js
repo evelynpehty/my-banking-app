@@ -11,8 +11,6 @@ import { Link, Box, TextField, Button, Container, Grid, Typography, Alert, Paper
 import {  Link as RouterLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
-
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -27,6 +25,7 @@ function Copyright(props) {
 }
 
 export default function Login() {
+
     const navigate = useNavigate();
 
     const [email, setEmail] = useState("")
