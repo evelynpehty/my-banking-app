@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-banking-app/static/css/main.8f702e75.css",
+    "main.js": "/my-banking-app/static/js/main.3afdbc6d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/my-banking-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bank-logo.png": "/my-banking-app/static/media/bank-logo.7f7eb384577a94730800.png",
+    "static/media/ndp.png": "/my-banking-app/static/media/ndp.1439b6b0dd1b2c786b79.png",
+    "static/media/image2.png": "/my-banking-app/static/media/image2.a751fe3ace82dd365ef9.png",
+    "static/media/mighty-fx.jpg": "/my-banking-app/static/media/mighty-fx.bf3b82eef4e5476b9385.jpg",
+    "static/media/card3.jpg": "/my-banking-app/static/media/card3.b2a0b27b1b7005ca0955.jpg",
+    "static/media/national-savings.jpg": "/my-banking-app/static/media/national-savings.68d5c683df33f6e255fb.jpg",
+    "static/media/card1.jpg": "/my-banking-app/static/media/card1.9c7c9784fdd89e0a75ee.jpg",
+    "static/media/card2.jpg": "/my-banking-app/static/media/card2.d9695aa997bda989b494.jpg",
+    "index.html": "/my-banking-app/index.html",
+    "static/media/instagram.svg": "/my-banking-app/static/media/instagram.975401a0199d3e01056033ac36c8c6bf.svg",
+    "static/media/linkedin.svg": "/my-banking-app/static/media/linkedin.c1f5e40be9a4ee398cf2ce641b42ccc4.svg",
+    "static/media/facebook.svg": "/my-banking-app/static/media/facebook.5f4e914ebae714a12df3b45de356da4d.svg",
+    "static/media/youtube.svg": "/my-banking-app/static/media/youtube.37dafca81d6a22718bf347e278a0dcb2.svg",
+    "main.8f702e75.css.map": "/my-banking-app/static/css/main.8f702e75.css.map",
+    "main.3afdbc6d.js.map": "/my-banking-app/static/js/main.3afdbc6d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/my-banking-app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f702e75.css",
+    "static/js/main.3afdbc6d.js"
+  ]
+}
