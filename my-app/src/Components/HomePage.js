@@ -21,13 +21,10 @@ function HomePage(){
             color: "#00237B"
         },
         chip:{
-            
             border: "2px solid #00237B",
             padding: '8px', // Adjust the padding to change the badge size
             fontSize: "16px",
             cursor: 'pointer',
-            
-           
         },
     }
 
