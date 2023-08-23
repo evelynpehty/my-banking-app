@@ -3,6 +3,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Link, Box, TextField, Button, Container, Grid, Typography, Paper } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 
+import { DateTime } from 'luxon';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -32,21 +34,59 @@ export default function Checkout() {
     const [contactNumber, setContactNumber] = useState("")
     const [errorM, setErrorM] = useState([]);
     const [errorStatus, setErrorStatus] = useState(false)
-    
-
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
     const handleRegister = () => {
        
+        // const currentDate = DateTime.local().toFormat('yyyy-MM-dd')
+        // console.log(dob)
+        // console.log(DateTime.to(dob))
+        // //console.log(age)
+ 
         const validationError = []
 
         if(localStorage.getItem(email) !== null){
             setErrorStatus(true)
-            validationError.push("email existed")
+            validationError.push("Email Existed")
         }
 
         if(password !== reEnterPassword){  
             setErrorStatus(true)
-            validationError.push("password does not match")
+            validationError.push("Password does not match")
+        }
+
+        if(password.length < 8){
+            validationError.push("Password must have at least 8 characters")
+        }
+        
+        const lowercaseRegex = /[a-z]/;
+        if(!lowercaseRegex.test(password)){
+            validationError.push("Contains at least one lowercase letter")
+        }   
+
+        const uppercaseRegex = /[A-Z]/;
+        if(!uppercaseRegex.test(password)){
+            validationError.push("Contains at least one uppercase letter")
+        }
+        
+        const digitRegex = /\d/;
+        if(!digitRegex.test(password)){
+            validationError.push("Contains at least one digit")
+        }
+
+        const specialCharRegex = /[!@#$%^&*]/;
+        if(!specialCharRegex.test(password)){
+            validationError.push("Contains at least one special character")
+        }
+
+        if(dob !== ""){
+            const birthDate = DateTime.fromISO(dob); // Replace with the actual birth date
+            const currentDate = DateTime.local();
+            //const age = currentDate.year - birthDate.year
+            //console.log(age)
+            if(birthDate > currentDate){
+                validationError.push("Invalid Date")
+            }
         }
 
         setErrorM(validationError)

@@ -46,8 +46,6 @@ export default function Login() {
             }
         }
         setEStatus(true)
-        //alert(errorM)
-
     }
   
 

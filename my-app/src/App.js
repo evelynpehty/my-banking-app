@@ -30,7 +30,7 @@ function App() {
  
   return (
     <div>
-      {login ? <LoginNavigation /> : <HomeNavigation />}
+     {login ? <LoginNavigation /> : <HomeNavigation />} 
       
       
       <Routes>

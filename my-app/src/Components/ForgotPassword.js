@@ -23,8 +23,11 @@ function ForgotPassword(){
             flexDirection = "column"
         >
         <Paper elevation={24} style={{ padding: '20px' }}>
-            <Typography Typography component="h1" variant="h4" sx={{ color:"#00237B", fontWeight: "bold" }}>
+            <Typography component="h1" variant="h4" sx={{ color:"#00237B", fontWeight: "bold" }}>
                 Forgot Password
+            </Typography>
+            <Typography sx={{ color:"#00237B", fontSize: "12px"}}>
+                Please enter your email address. You will receive a link to create a new password
             </Typography>
             <form>
             <TextField
